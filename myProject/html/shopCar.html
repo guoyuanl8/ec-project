@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopcar</title>
+	<link rel="stylesheet" href="../css/common/style-reset.css">
+	<link rel="stylesheet" href="../css/common/common.css">
+	<link rel="stylesheet" href="../css/shopCar.css">
+	<link rel="stylesheet" href="../css/common/side-bar.css">
+</head>
+<body>
+	<!-- side-bar -->
+	<div id="side-bar-out"></div>
+	<div id="side-bar"></div>
+	<!-- banner -->
+	<div class="banner-out">
+		<div class="banner wid-mar"><a href=""><img src="../img/common/banner.jpg" alt=""></a></div>
+	</div>
+	<!-- top-nav -->
+	<div id="top-nav-out">
+		<div id="top-nav" class="wid-mar">
+			
+		</div>
+	</div>
+	<div class="wid-mar logo">
+		<div class="cart-logo fl">
+			<a href="index.html"><img src="../img/shopCar/logo.png" alt=""></a>
+		</div>
+		<div class="cart-flow fr">
+			<dl class="fl first-dl">
+				<dt class="has-color">1</dt>
+				<dd>我的购物车</dd>
+			</dl>
+			<dl class="fl">
+				<dt>2</dt>
+				<dd>确认订单</dd>
+			</dl>
+			<dl class="fl last-dl">
+				<dt>3</dt>
+				<dd>提交订单</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="wid-mar cart-con-out">
+		<div class="cart-con">
+			<div class="wrap">
+				<div class="no-goods-cart">
+					<i></i>
+					<div class="solve-bug"></div>
+					<p class="p1">购物车空空的哟~<a href="index.html">去挑选商品&gt;</a></p>
+					<p class="p2">登录后可以显示之前加入的商品<button><a href="login.html">登录</a></button></p>
+				</div>
+			</div>
+			<div class="has-good-cart">
+				<p class="p1">我的购物车</p>
+				<div class="cart-main">
+					<ul class="cart-main-tit clear">
+						<li class="tit-check fl">
+							<input type="checkbox"  checked ="checked" class="check-all">
+							<label for="check-all" class="">全选</label>
+						</li>
+						<li class="tit-msg fl">商品信息</li>
+						<li class="tit-price fl">单价（元）</li>
+						<li class="tit-quantity fl">数量</li>
+						<li class="tit-sum fl">小计（元）</li>
+						<li class="tit-handler fl">操作</li>
+					</ul>
+					<div class="cart-form-wrap">
+				
+					</div>
+					<!-- c-footer -->
+					<div class="c-footer">
+						<div class="c-balance clear">
+							<ul class="fr">
+								<li>
+									<span class="fr li-s">￥<i id="total-pri">3433</i></span>
+									<span class=" fr" >商品金额：</span>
+									<span class="fr total-num">共<i id="total-num"></i>件商品</span>
+								</li>
+								<li>
+									<span class="li-s fr">-￥<i id="privilege">10</i></span>
+									<span class="fr ">优惠金额：</span>
+								</li>
+								<li>
+									<span class="li-s fr" id="actual-money">￥4125</span>
+									<span class="fr actual">实付金额：</span>
+								</li>
+							</ul>
+						</div>
+						<div class="c-balance-bt clear">
+							<div class="bt-check fl">
+								<input type="checkbox" class="check-all" checked="checked">
+								<label for="foot-check-all">全选</label>
+								</div>
+							<div class="bt-del fl">
+								<i class="del" id="del"></i>
+								<label for="del">删除</label>
+							</div>						
+							<a href="##" id="account-btn" class="fr">立即结算</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer-out">
+		<div id="footer" class="wid-mar">
+		
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../lib/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="../lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/common/common.js"></script>
+	<script type="text/javascript" src="../js/shopCar.js"></script>
+</body>
+</html>

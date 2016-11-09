@@ -1,0 +1,29 @@
+/*--样式重置---*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, form, fieldset, legend, img, input, button,select{ 
+	margin:0; padding:0; 
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+ul,li{
+	list-style: none;
+}
+img{
+	border: 0;
+	vertical-align: top;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+input,button,select{
+	border: 0;
+	outline: none;
+}
+i,em{
+	font-style: normal;
+}
+strong{
+	font-weight: normal;
+}   

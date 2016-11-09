@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pay</title>
+	<link rel="stylesheet" href="../css/common/style-reset.css">
+	<link rel="stylesheet" href="../css/common/common.css">
+	<link rel="stylesheet" href="../css/pay.css">
+	<link rel="stylesheet" href="../css/common/side-bar.css">
+</head>
+<body>
+	<!-- side-bar -->
+	<div id="side-bar-out"></div>
+	<div id="side-bar"></div>
+	<!-- banner -->
+	<div class="banner-out">
+		<div class="banner wid-mar"><a href=""><img src="../img/common/banner.jpg" alt=""></a></div>
+	</div>
+	<!-- top-nav -->
+	<div id="top-nav-out">
+		<div id="top-nav" class="wid-mar">
+			
+		</div>
+	</div>
+	<!-- pay-logo -->
+	<div class="wid-mar logo">
+		<div class="pay-logo fl">
+			<a href="index.html"><img src="../img/shopCar/logo.png" alt=""></a>
+		</div>
+		<div class="pay-flow fr">
+			<dl class="fl first-dl">
+				<dt class="has-color">1</dt>
+				<dd>我的购物车</dd>
+			</dl>
+			<dl class="fl has-color">
+				<dt class="has-color">2</dt>
+				<dd>确认订单</dd>
+			</dl>
+			<dl class="fl last-dl">
+				<dt>3</dt>
+				<dd>提交订单</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- pay-logo  end-->
+	<!-- form表单 -->
+	<form action="" class="wid-mar">
+		<!-- confirm the order -->
+		<h1 class="title-h1">确认订单信息</h1>
+		<!-- shipping address -->
+		<div class="address">
+			<h2 class="title-h2">选择收货地址</h2>
+			<div class="address-main">
+				<dl class="clear">
+					<dt class="fl"><em>*</em>收 货 人：</dt>
+					<dd class="fl">
+						<div class="dd-inp">
+							<input type="text" id="receiver">
+						</div>
+						<p class="dd-hint">请填写正确的收货人</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt class="fl"><em>*</em>收货地址：</dt>
+					<dd class="fl">
+						<div class="dd-inp">
+							<select name="" id="province"></select>
+							<select name="" id="city"></select>
+							<select name="" id="area"></select>
+						</div>
+						<p class="dd-hint">请填写完整的收货地址</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt class="fl"><em>*</em>详细地址：</dt>
+					<dd class="fl">
+						<div class="dd-inp">
+							<input type="text" id="address-detail" placeholder="请填写详细地址">
+						</div>
+						<p class="dd-hint">请填写详细地址</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt class="fl"><em>*</em>手机号码：</dt>
+					<dd class="fl">
+						<div class="dd-inp">
+							<input type="text" id="phone-num">
+						</div>
+						<p class="dd-hint">请填写手机号码</p>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt class="fl"></dt>
+					<dd class="fl"><button>保存收货地址</button></dd>
+				</dl>
+			</div>
+		</div>
+		<!-- pay-method -->
+		<div class="pay-method">
+			<h2 class="title-h2">选择支付方式</h2>
+			<div class="pay-online">
+				<div class="head pay-way">
+					<input type="radio" id="online-radio">
+					<label for="online-radio">在线支付</label>
+					<i></i>
+					<a href="##">选择其他平台&gt;</a>
+				</div>
+				<div class="detail clear">
+					<div class="pay-select fl">
+						<input type="radio"/>
+						<label for="">
+							<span class="pay-01"></span>
+						</label>
+					</div>
+					<div class="pay-select fl">
+						<input type="radio">
+						<label for="">
+							<span class="pay-02"></span>
+						</label>
+					</div>
+					<div class="pay-select fl">
+						<input type="radio">
+						<label for="">
+							<span class="pay-03"></span>
+						</label>
+					</div>
+					<div class="pay-select fl">
+						<input type="radio">
+						<label for="">
+							<span class="pay-04"></span>
+						</label>
+					</div>
+					<div class="pay-select fl">
+						<input type="radio">
+						<label for="">
+							<span class="pay-05"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="pay-hand pay-way">
+				<input type="radio" id="hand-radio">
+				<label for="hand-radio">货到付款</label>
+				<span>送货上门后再付款。</span>
+			</div>
+			<div class="error-info"></div>
+		</div>
+		<!-- order-inform -->
+		<div class="order-info">
+			<h2 class="title-h2">订单商品信息</h2>
+			<p class="return"><a href="shopCar.html">返回购物车修改</a></p>
+			<div class="good-info-box">
+				<ul class="clear good-ul">
+					<li class="fl li-1">商品信息</li>
+					<li class="fl li-2">单价</li>
+					<li class="fl li-3">数量</li>
+					<li class="fl li-4">小计</li>
+				</ul>
+				<div class="cart-form-box clear">
+					<!-- <div class="cart-form clear">
+						<div class="c-msg fl clear">
+							<dl>
+								<dt class="good-img fl"><img src="" alt=""></dt>
+								<dd class="good-info fl">
+									<p class="msg-tit"></p>
+									<p class="msg-cor">							
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="c-price fl">
+							￥<i class="price"></i>
+						</div>
+						<div class="c-quantity fl">
+							x <i>1</i>
+						</div>
+						<div class="c-sum fl">
+							￥<span class="sum"></span>
+						</div>
+					</div>	 -->
+				</div>
+				<div class="coupons">
+					<p><span>使用优惠券<i></i></span></p>
+					<p><span>使用积分<i></i></span>（现有积分0分）</p>
+				</div>
+				<div class="order-foot clear">
+					<div class="foot-detail">
+						<div class="other-info fl">
+							其他信息：
+							<input type="checkbox">
+							发票
+						</div>
+						<ul>
+							<li class="clear">
+								<span class="fr li-span" id="total-pri">￥234</span>
+								<span class="fr">商品金额：</span>
+							</li>
+							<li class="clear">
+								<span class="fr li-span">0</span>
+								<span class="fr">运费：</span>
+							</li>
+							<li class="clear">
+								<span class="fr li-span">0</span>
+								<span class="fr">积分抵现：</span>
+							</li>
+							<li class="clear">
+								<span class="fr li-span" id="privilege">￥234</span>
+								<span class="fr">优惠：</span>
+							</li>
+							<li class="clear">
+								<span class="fr li-span actual-money" id="actual-money">￥234</span>
+								<span class="fr actual">实付金额：</span>
+							</li>
+						</ul>
+						<div class="commit-order clear">
+							<button class="fr">提交订单</button>
+						</div>
+						<p class="foot-p">送至：<span class="address-to"></span></p>
+						<p class="foot-p">收货人：<span class="receiver"></span></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- footer -->
+	<div id="footer-out">
+		<div id="footer" class="wid-mar">
+		
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../lib/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="../lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/common/common.js"></script>
+	<script type="text/javascript" src="../js/pay.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+{
+	"group1":{
+		"src1":"../img/index/promotion1.jpg",
+		"src2":"../img/index/promotion2.jpg"
+	},
+	"group2":{
+		"src1":"../img/index/promotion3.jpg",
+		"src2":"../img/index/promotion4.jpg"
+	}
+}

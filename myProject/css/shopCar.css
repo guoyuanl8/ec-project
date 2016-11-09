@@ -1,0 +1,359 @@
+/* ------------------------整体框架布局------------------ */
+.logo{
+	height: 99px;
+}
+.cart-con{
+	width: 1000px;
+	
+}
+.cart-con-out{
+	margin-bottom: 20px;
+}
+/* ------------end------------整体框架布局-------end----------- */
+/* -------------------多个模块的公共样式-------------------- */
+/* ----------end---------多个模块的公共样式-------end------------- */
+
+/* --------------------每个模块的详细样式--------------- */
+
+/* ------logo------- */
+.cart-logo{
+	margin-top: 20px;
+}
+.cart-flow{
+	border-top: 2px solid #ddd;
+	text-align: center;
+	margin: 25px 30px 0 0;
+}
+.cart-flow dl{
+	width: 180px;
+	position: relative;
+	top: -2px;
+	border-top: 2px solid #ddd;
+}
+.cart-flow dl.first-dl{
+	width: 90px;
+	border-top-color: #ff504a;
+}
+.cart-flow dl.first-dl dt{
+	position: relative;
+	left: -45px;	
+}
+.cart-flow dl.first-dl dt.has-color{
+	background-position: 0 0;
+}
+.cart-flow dl.first-dl dd{
+	position: relative;
+	left: -45px;
+	color:  #ff504a;
+}
+.cart-flow dl.last-dl{
+	width: 90px;
+}
+
+.cart-flow dl.last-dl dt{
+	position: relative;
+	left: 45px;
+}
+.cart-flow dl.last-dl dd{
+	position: relative;
+	left: 45px;
+}
+.cart-flow dt{
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	margin: -10px auto 0;
+	font-family: arial;
+	color:#fff;
+	background-image: url(../img/shopCar/icons.png);
+	background-position: 0 -20px;
+}
+.cart-flow dd{
+	color: #666;
+	margin-top:5px;
+}
+
+/*-------------cart-con---------*/
+/*-------cart-con----公共样式--------*/
+.del{
+	display: inline-block;
+	width:18px;
+	height: 20px;
+	background: url(../img/shopCar/icons.png) 0 -125px;
+	/*position: absolute;*/
+	vertical-align: middle;
+	cursor: pointer;
+}
+.del:hover{
+	background-position: 0 -149px;
+}
+/*--end-----cart-con----公共样式-----end---*/
+.wrap{
+	border: 1px solid #ddd;
+
+}
+.cart-con .no-goods-cart{
+	width: 272px;
+	height: 105px;
+	margin: 109px 325px 110px 401px;
+	position: relative;
+}
+.no-goods-cart .solve-bug{
+	height: 30px;
+}
+.no-goods-cart i{
+	display: block;
+	width: 120px;
+	height: 101px;
+	background: url(../img/shopCar/cart-empty.png);
+	position: absolute;
+	top: 0;
+	left:-121px;
+}
+.no-goods-cart .p1{
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	font-size: 23px;
+}
+.no-goods-cart .p1 a{
+	color: #4283eb;
+	margin-left:15px;
+	font-size: 12px;
+}
+.no-goods-cart .p2{
+	height: 40px;
+	line-height: 40px;
+	color:#666;
+}
+.no-goods-cart .p2 button{
+	width: 60px;
+	height:22px;
+	line-height: normal;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 11px;
+	background:#ff504a;
+	cursor:pointer;
+}
+.no-goods-cart .p2 button a{
+	color: #fff;
+
+}
+
+/*---has-good-cart*/
+.has-good-cart{
+	width: 1000px;
+	height: auto;
+}
+.has-good-cart .p1{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 3px;
+	text-align: left;
+	font-size: 15px;
+	color: #000;
+}
+.has-good-cart .cart-main{
+	width: 998px;
+	border: 1px solid #ddd;
+}
+.cart-main .cart-main-tit{
+	color: #666666;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #e8e8e8;
+}
+.cart-main .cart-main-tit li{
+	text-align: left;
+}
+.cart-main-tit .tit-check{
+	width: 113px;
+	padding: 10px 15px 10px 20px;
+}
+.cart-main-tit .tit-check input{
+	vertical-align: middle;
+}
+.cart-main-tit .tit-check label{
+	margin-left: 20px;
+}
+.cart-main-tit .tit-msg{
+	width: 280px;
+	padding: 10px 80px 10px 0;
+}
+.cart-main-tit .tit-price{
+	width: 140px;
+	padding: 10px 0;
+}
+.cart-main-tit .tit-quantity{
+	width: 70px;
+	text-align: center;
+	padding: 10px 70px 10px 0;
+}
+.cart-main-tit .tit-sum{
+	width: 140px;
+	padding: 10px 0;
+}
+.cart-main-tit .tit-handler{
+	width: 70px;
+	padding: 10px 0;
+}
+
+
+.cart-form{
+	width: 998px;
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.c-check{
+	width: 13px;
+	height:12px;
+	padding: 34px 20px;
+	vertical-align: middle;
+}
+.c-check input{
+	text-align: center;
+}
+.c-msg{
+	width: 455px;
+	height:80px;
+}
+.c-msg dt{
+	margin-right: 15px;
+}
+.c-msg dd p.msg-tit{
+	width: 271px;
+	line-height: 18px;
+	color: #666666;
+	overflow: hidden;
+}
+.c-msg dd p.msg-cor{
+	padding-top: 6px;
+	color: #666666;
+}
+.c-msg dd p.msg-cor .standard{
+	margin-left: 30px;
+}
+.c-price{
+	color: #956666;
+}
+.c-price, .c-quantity, .c-sum{
+	width: 140px;
+	padding-top: 33px;
+	color: #666;
+	font-weight: bold;
+}
+.c-handler{
+	width: 70px;
+	margin-top: 33px;
+}
+
+.c-msg img{
+	width: 80px;
+	height: 80px;
+}
+.c-msg span.good-info{
+	margin-left:15px;
+	color: #666666;
+}
+.c-quantity .tip{
+	width: 68px;
+	height: 18px;
+	border: 1px solid #ddd;
+}
+.c-quantity .tip a{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	color: #222222;
+	text-align: center;
+}
+.c-quantity .tip a.less-num{
+	border-right:1px solid #ddd;
+
+}
+.c-quantity .tip a.add-num{
+	border-left:1px solid #ddd;
+}
+.num{
+	width: 30px;
+	height: 18px;
+	color: #b77d66;
+	text-align: center;
+}
+.sum{
+	color: #666666;
+	font-weight: bold;
+}
+/*----c-footer----*/
+.c-footer{
+	margin-top:10px;
+	border: 1px solid #ddd;
+}
+
+.c-balance{
+	border-bottom: 1px solid #ddd;
+}
+.c-balance ul{
+	margin-top: 5px;
+	padding-right: 21px;
+	padding-top: 21px;
+}
+.c-balance ul li{
+	height: 22px;
+	line-height: 22px;
+	color: #333333;
+}
+.li-s{
+	display: inline-block;
+	width: 104px;
+	text-align: right;
+}
+.c-balance ul li .total-num{
+	margin-right: 5px;
+}
+
+#total-num{
+	color: #f70800;
+}
+.actual{
+	color: #393333;
+	font-weight: bold;
+}
+#actual-money{
+	color: #f70800;
+	font-size: 15px;
+}
+
+.c-balance-bt{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	background: #f2f2f2;
+}
+.c-balance-bt .bt-check{
+	width: ;
+}
+.c-balance-bt .bt-check label{
+	margin-left: 11px;
+}
+.c-balance-bt .bt-del{
+	margin-left: 20px;
+}
+.c-balance-bt .bt-del label{
+	margin-left: 5px;
+	cursor: pointer;
+}
+.c-balance-bt #account-btn{
+	display: block;
+	width: 160px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: #ff504a;
+	color: #fff;
+
+}

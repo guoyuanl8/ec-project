@@ -1,0 +1,383 @@
+ -------------------多个模块的公共样式-------------------- */
+form .address, form .pay-method, form .order-info{
+	width: 998px;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 10px;
+}
+h2.title-h2{
+	height: 18px;
+	line-height: 18px;
+	margin: 0 0 19px 0;
+	padding-left: 10px;
+	border-left: 3px solid #ff504e;
+	font-weight: normal;
+	font-size: 15px;
+	color: #222222;
+}
+/* ----------end---------多个模块的公共样式-------end------------- */
+
+/* ------------------------整体框架布局------------------ */
+.logo{
+	height: 99px;
+}
+
+h1.title-h1{
+	height:43px;
+	line-height: 43px;
+	font-size: 17px;
+	color: #222222;
+	font-weight: normal;
+}
+
+/* ------------end------------整体框架布局-------end----------- */
+
+/* --------------------每个模块的详细样式--------------- */
+
+/* ------logo------- */
+.pay-logo{
+	margin-top: 20px;
+}
+.pay-flow{
+	border-top: 2px solid #ddd;
+	text-align: center;
+	margin: 25px 30px 0 0;
+}
+.pay-flow dl{
+	width: 180px;
+	position: relative;
+	top: -2px;
+	border-top: 2px solid #ddd;
+}
+.pay-flow dl.has-color{
+	border-top-color: #ff504a;
+}
+.pay-flow dl.first-dl{
+	width: 90px;
+	border-top-color: #ff504a;
+}
+.pay-flow dl.first-dl dt{
+	position: relative;
+	left: -45px;	
+}
+.pay-flow dl dt.has-color{
+	background-position: 0 0;
+}
+.pay-flow dl.first-dl dd{
+	position: relative;
+	left: -45px;
+	color:  #ff504a;
+}
+.pay-flow dl.last-dl{
+	width: 90px;
+}
+
+.pay-flow dl.last-dl dt{
+	position: relative;
+	left: 45px;
+}
+.pay-flow dl.last-dl dd{
+	position: relative;
+	left: 45px;
+}
+.pay-flow dt{
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	margin: -10px auto 0;
+	font-family: arial;
+	color:#fff;
+	background-image: url(../img/shopCar/icons.png);
+	background-position: 0 -20px;
+}
+.pay-flow dd{
+	color: #666;
+	margin-top:5px;
+}
+/*---------------------------form-------------------*/
+/*-----form 公共样式-------*/
+form .address,form .pay-method, form .order-info{
+	padding: 19px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+/*------end----form 公共样式----end---*/
+
+/*-----收货地址----------*/
+.address-main{
+	width: 960px;
+	padding: 0 0 36px 0;
+	margin-top: 8px;
+}
+.address-main dl{
+	margin-bottom: 10px;
+}
+.address-main dt{
+	width: 79px;
+	padding-top: 9px;
+	color: #444444;
+}
+.address-main dt em{
+	color: #f90800;
+}
+.address-main dd .dd-inp select{
+	height: 24px;
+	width: 138px;
+	border: 1px solid #aaaaaa;
+	border-radius: 1px;
+}
+.address-main dd .dd-inp input{
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #ddd;
+}
+input#receiver, input#phone-num{
+	width: 173px;
+	padding-left: 5px;
+}
+input#address-detail{
+	width: 430px;
+	padding-left: 5px;
+}
+
+.address-main dd p.dd-hint{
+	height: 16px;
+	line-height: 16px;
+	padding-left: 15px;
+	color: #ff504a;
+	background:url(../img/pay/ti.png) no-repeat 0 3px;
+	display: none;
+}
+.address-main button{
+	width: 120px;
+	height: 28px;
+	border-radius: 2px;
+	background: #ff5049;
+	color: #fff;
+	cursor: pointer;
+}
+/*-----end---收货地址------end----*/
+
+/* --------付款方式------- */
+/*--付款方式--公共---*/
+.pay-way input, .pay-select input, .pay-online .pay-select label span{
+	vertical-align: middle;
+}
+.pay-way.head i, .pay-select span{
+	display: inline-block;
+	width: 108px;
+	height: 32px;
+	background-image: url(../img/pay/sprite-pay.png);
+}
+/*---end-付款方式--公共-end--*/
+.pay-method{
+	border: 1px solid #ddd;
+}
+.pay-way label{
+	color: #444444;
+	margin-left: 10px;
+}
+.pay-way.head i{
+	margin: -10px 10px 0 0;
+	background-position: -148px 5px;
+}
+.pay-way.head a{
+	color: #ad7de4;
+}
+
+.pay-online .detail{
+	width: 888px;
+	margin-top: 25px;
+}
+
+.pay-online .detail .pay-select{
+	margin-left: 30px;
+	margin-bottom: 25px;
+}
+.pay-online .pay-select input{}
+.pay-online .pay-select label{
+	display: inline-block;
+	
+	margin-left: 11px;
+}
+.pay-select span{
+	padding: 5px 30px;
+	border: 1px solid #ddd;	
+}
+.detail .pay-01{
+	background-position: -118px 5px;
+}
+.detail .pay-02{
+	background-position: -118px -45px;
+}
+.detail .pay-03{
+	background-position: 30px 5px;
+}
+.detail .pay-04{
+	background-position: -226px 5px;
+}
+.detail .pay-05{
+	background-position: 30px -45px;
+}
+.pay-way.pay-hand{
+	margin-bottom: 35px;
+}
+.pay-way.pay-hand span{
+	margin-left: 45px;
+}
+/* ----end----付款方式------end----- */
+
+/*-----订单信息-------*/
+.order-info .return{
+	height: 37px;
+	line-height: 37px;
+	text-align: right;
+	color: #222222;
+}
+.order-info .good-info-box{
+	border: 1px solid #ddd;
+}
+.good-info-box .good-ul{
+	background-color: #f2f2f2;
+}
+.good-info-box .good-ul li{
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	color:#666666;
+	border-bottom: 1px solid #ddd;
+}
+.good-ul li.li-1{
+	width: 460px;
+}
+.good-ul li.li-2{
+	width: 135px;
+}
+.good-ul li.li-3{
+	width: 190px;
+}
+.good-ul li.li-4{
+	width: 126px;
+}
+.cart-form-box .cart-form{
+	padding: 12px 18px 12px 20px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+.c-msg{
+	width: 440px;
+	height:60px;
+}
+.c-msg dt, .c-msg dt img{
+	width: 60px;
+	height:60px;
+}
+.c-msg dt{
+	margin-right: 20px;
+}
+.c-msg dd p{
+	line-height: 24px;
+	max-height: 48px;
+	overflow: hidden;
+	color: #666666;
+}
+.c-msg dd p .standard{
+	margin-left: 20px;
+}
+.c-price{
+	width: 135px;
+	height: 60px;
+	text-align: center;
+	color: #666666;
+}
+.c-quantity{
+	width: 190px;
+	height: 60px;
+	text-align: center;
+	color: #222222;
+}
+.c-sum{
+	width: 126px;
+	height: 60px;
+	text-align: center;
+	font-weight: bold;
+	color:#666666;
+}
+form .coupons{
+	height: 102px;
+	padding-top: 20px;
+	padding-left: 20px;
+	border-bottom: 1px solid #ddd;
+}
+form .coupons p{}
+form .coupons p span{
+	display: inline-block;
+	width: 81px;
+	height: 24px;
+	padding-left: 8px;
+	line-height: 24px;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	border: 1px solid #ff504a;
+	color: #ff504a;
+	position: relative;
+}
+form .coupons p span i{
+	display: inline-block;
+	width: 9px;
+	height: 7px;
+	background: url(../img/pay/icons.png) no-repeat 0 -45px;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+form .order-foot{}
+form .foot-detail{
+	padding: 20px;
+	position: relative;
+}
+form .foot-detail .other-info{
+	position: absolute;
+	left: 20px;
+	top: 20px;;
+}
+form .foot-detail .other-info input{
+	vertical-align: middle;
+	margin: 0 15px 0 30px;
+}
+form .foot-detail ul{}
+form .foot-detail ul li{
+	height: 24px;
+	line-height: 24px;
+}
+form .foot-detail li span{
+	color: #333333;
+}
+form .foot-detail li span.li-span{
+	width: 105px;
+	text-align: right;
+}
+form .foot-detail li span.actual{
+	font-weight: bold;
+}
+form .foot-detail li span.actual-money{
+	font-weight: bold;
+	color: #f70800;
+}
+form .foot-detail .commit-order button{
+	width: 144px;
+	height: 30px;
+	border-radius: 2px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	font-size: 15px;
+	background: #ff504a;
+	color: #fff;
+}
+form .foot-detail p.foot-p{
+	line-height: 22px;
+	text-align: right;
+	color: #8787b8;
+}
+/*---end----订单信息---end----*/
+/*-------end----------form-----------end-------------

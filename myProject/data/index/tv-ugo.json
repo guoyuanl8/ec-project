@@ -1,0 +1,12 @@
+{
+	"li1":{
+		"src1":"../img/index/min-lbt1.jpg",
+		"src2":"../img/index/min-lbt2.jpg",
+		"src3":"../img/index/min-lbt3.jpg"
+	},
+	"li2":{
+		"src1":"../img/index/min-lbt4.jpg",
+		"src2":"../img/index/min-lbt5.jpg",
+		"src3":"../img/index/min-lbt6.jpg"
+	}
+}

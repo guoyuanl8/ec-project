@@ -1,0 +1,33 @@
+{
+	"img1":{
+		"src":"../img/index/minor-lbt1.jpg",
+		"alt": "莫洛琪马油套装",
+		"title": "优品惠莫洛琪马油套装",
+		"h3": "莫洛琪马油套装",
+		"proInfo": "【买手说】富含优质马油精华,补充肌肤营养,滋养肌肤,改善暗沉效果,恢复肌肤莹润嫩滑!",
+		"proPrice": 233,
+		"phoneNum":"158****6767",
+		"commentDetail":"衣服的质量很好"
+	},
+	"img2":{
+		"src":"../img/index/minor-lbt2.jpg",
+		"alt": "韩国Pallaskr电脑智能空气砸锅",
+		"title": "优品惠韩国Pallaskr电脑智能空气砸锅",
+		"h3": "韩国Pallaskr电脑智能空气砸锅",
+		"proInfo": "【买手说】电脑操作快捷方便;控制旋钮一件搞定,无需等待。",
+		"proPrice": 799,
+		"priceDown": "直降",
+		"freePostage":"包邮",
+		"phoneNum":"183****6765"
+	},
+	"img3":{
+		"src":"../img/index/minor-lbt3.jpg",
+		"alt": "岐氏姐妹 文艺复古秋款连衣裙F2075-1092",
+		"title": "优品惠岐氏姐妹 文艺复古秋款连衣裙F2075-1092",
+		"h3": "岐氏姐妹 文艺复古秋款连衣裙F2075-1092",
+		"proInfo": "【买手说】2016款秋连衣裙 文艺复古范，亲肤体验，透气凉爽，宽松舒适。",
+		"proPrice": 172,
+		"priceDown": "直降",
+		"freePostage":"包邮"
+	}
+}

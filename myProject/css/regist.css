@@ -1,0 +1,243 @@
+.reg-container{
+	width: 968px;
+	height: auto;
+	padding: 0 16px;
+}
+.reg-logo {
+	height: 117px;
+}
+
+
+.reg-select {
+	height: 42px;
+}
+.reg-con{
+	width: 964px;
+	height: 445px;
+	border: 2px solid #ff8400;
+	padding-top: 45px;
+	position: relative;
+}
+
+
+/* --------------------每个模块的具体样式------------------ */
+
+/* -----登录页面的logo---- */
+.reg-logo .logo a{
+	display: inline-block;
+	width: 185px;
+	height: 57px;
+	margin-top: 30px;
+	background: url(../img/regist/regist-bg.gif) no-repeat;
+}
+.reg-logo .logo span{
+	display: inline-block;
+	width: 168px;
+	height: 57px;
+	margin-top: 30px;
+	background: url(../img/regist/regist-bg1.gif) no-repeat;
+}
+.reg-logo .is-reg{
+	margin-top:70px;
+}
+.reg-logo .is-reg a{
+	display: inline-block;
+	line-height: 16px;
+	color: #0089cf;
+}
+
+/* -----登录页面的登录方式的选择reg-select---- */
+.reg-select a{
+	display: inline-block;
+	width: 220px;
+	height: 42px;
+	padding-left: 5px;
+	border-radius: 3px 3px 0 0;
+	margin-right: 2px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	background: #f2f2f2 ;
+	position: relative;
+	color: #000;
+	cursor: pointer;
+}
+.reg-select a.active{
+	background: #ff8400;
+	color: #fff;
+}
+.reg-select a i{
+	display: inline-block;
+	width: ;
+	background-image: url(../img/regist/regist-bg1.gif);
+	position: absolute;
+}
+.reg-select a i.phone-i{
+	width: 12px;
+	height: 16px;
+	background-position: 0 -233px;
+	left: 72px;
+	top: 13px;
+}
+.reg-select a i.tv-i{
+	width: 14px;
+	height: 13px;
+	background-position: 0 -304px;
+	left: 56px;
+	top: 16px;	
+}
+.reg-select .phone{
+	background-position: 0 -233px;
+}
+.reg-select .tv{
+	background-position: 0 -304px;
+}
+
+/*--------------注册详情-------------*/
+.register-box{
+	height: 37px;
+	margin-bottom: 15px;
+}
+.register-box.no-margin{
+	margin-bottom: 0;
+}
+
+.register-box .lab-name{
+	display: block;
+	width: 187px;
+	height: 37px;
+	padding-right: 15px;
+	text-align: right;
+	line-height: 37px;
+	color: #666;
+}
+.register-box .pos{
+	position: relative;
+}
+/*-----------表单项样式设置--------------*/
+
+.register-box .pos input{
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #a2a2a2;
+	font: 15px/arial;
+	color: #222;
+}
+input#phone-num, input#set-code, input#confirm-code{
+	width: 329px;
+}
+input#verify-code, input#msg-code{
+	width: 102px;
+}
+.register-box .pos input.focus{
+	border: 1px solid #5fc100;
+}
+
+
+
+/*----------end---表单项样式设置----------*/
+
+/*-------提示信息样式设置------*/
+
+.register-box .pos .tip1{
+	width: 16px;
+	height: 15px;
+	background: url(../img/regist/regist-bg.gif);
+	position: absolute;
+	right: 9px;
+	top: 8px;
+
+}
+/*--验证通过*/
+.register-box .pos .tip1.right{
+	background-position: 0 -275px;
+}
+.register-box .pos .tip1-phone{
+	background-position: 0 -229px;
+}
+.register-box .pos .tip1-set, .register-box .pos .tip1-confirm{
+	background-position: 0 -251px;
+}
+
+.register-box .pos .tip2{
+	width: 270px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #555;
+	background-color: #f6f6f6;
+	position: absolute;
+	left: 353px;
+	top: 0;
+	display: none;
+}
+.register-box .pos .tip2.default{
+	background: #f6f6f6;
+	color: #555;
+	border: 1px solid #e9e9e9;
+}
+.register-box .pos .tip2.error{
+	background: #fff3f3;
+	color: #eb0007;
+	border: 1px solid #ffadb0;
+}
+#code-pic{
+	line-height: 35px;
+}
+#code-pic #switch-over{
+	color: #0089cf;
+	padding-left: 14px;
+}
+#code-pic #code-pic-num{
+	display: inline-block;
+	width: 89px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	border: 1px solid #ccc;	
+	vertical-align: middle;
+	cursor: pointer;
+}
+#code-btn{
+	width: 114px;
+	height: 24px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 24px;
+	background: #fefefe;
+	color: #858585;
+	position: absolute;
+	top: 6px;
+	left: 134px;
+	cursor: pointer;
+}
+
+.reg-con button{
+	width: 126px;
+	height: 33px;
+	border-radius: 3px;
+	margin: 14px 0 0 201px;
+	font-size: 14px;
+	font-weight: bold;
+	background: #e50038;
+	color: #fff;
+	cursor: pointer;
+}
+.reg-con .help{
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	padding-left: 201px;
+}
+.reg-con .help a{
+	color: #0089cf;
+}
+.reg-con .help span{
+	color: #eb0007;
+}

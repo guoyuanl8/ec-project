@@ -1,0 +1,176 @@
+.land-container{
+	width: 968px;
+	height: auto;
+	padding: 0 16px;
+}
+.land-logo {
+	height: 117px;
+}
+
+
+.land-con{
+	width: 964px;
+	height: 375px;
+	border: 2px solid #ff8400;
+	position: relative;
+	overflow: hidden;
+}
+
+.land-main{
+	width: 534px;
+	height: 360px;
+	padding:59px 0 0 132px;
+}
+.land-side{
+	width: 298px;
+	height: 419px;
+	background: #fff6ec;
+}
+
+
+/* --------------------每个模块的具体样式------------------ */
+
+/* -----登录页面的logo---- */
+.land-logo .logo a{
+	display: inline-block;
+	width: 185px;
+	height: 57px;
+	margin-top: 30px;
+	background: url(../img/regist/regist-bg.gif) no-repeat;
+}
+.land-logo .logo span{
+	display: inline-block;
+	width: 168px;
+	height: 57px;
+	margin-top: 30px;
+	background: url(../img/regist/regist-bg.gif) no-repeat 0 -58px;
+}
+
+.land-logo .help{
+	margin-top: 75px;
+}
+.land-logo .help a{
+	color: #0089cf;
+}
+.land-logo .help span{
+	color: #eb0007;
+}
+
+
+/*-----land-con详情------*/
+
+.land-main .land-box{
+	width: 351px;
+	height:65px;
+	color: #666;
+}
+.land-main .lab-name{
+	display: block;
+	height: 12px;
+	padding-bottom: 7px;
+}
+.land-main .pos{
+	position: relative;
+}
+.land-main .inp{
+	width: 315px;
+	height:　25px;
+	line-height: 25px;
+	padding: 5px 25px 5px 10px;
+	font-size: 13px;
+	font-family: Arial;
+	border: 1px solid #a2a2a2;
+}
+.land-main .inp.right{
+	background-color: #faffbd;
+}
+.land-main .inp.error{
+	border-color: red;
+}
+.land-main .tip1{
+	width: 16px;
+	height: 15px;
+	margin-top: 5px;
+	background: url(../img/login/land-bg.gif) no-repeat;
+	/* 0 -275px;*/
+	position: absolute;
+	top: 8px;
+	right: 9px;
+	z-index: 10;
+}
+.land-main .tip1.tip1-username{
+	background-position: 0 -229px;
+	
+}
+/*---输入的用户名正确----*/
+.land-main .tip1.tip1-username.right{
+	background-position: 0 -275px;
+
+}
+
+.land-main .tip1.tip1-pwd{
+	background-position: 0 -251px;
+}
+/*---输入的密码正确----*/
+.land-main .tip1.tip1-pwd.right{
+	background-position: 0 -275px;
+}
+
+.land-main .tip2{
+	height: 20px;
+	width: 340px;
+	padding-left: 10px;
+	line-height: 20px;
+	border: 1px solid #ffadb0;
+	background-color: #fff3f3;
+	position: absolute;
+	z-index: 110;
+	left: 0;
+	top: 37px;
+	display: none;
+}
+.land-main .pos .label{
+	height: 13px;
+	line-height: 13px;
+	display: block;
+	margin-left: 6px;
+}
+.land-main .is-rem{
+	color: #0089cf;
+}
+
+.land-main button{
+	width: 351px;
+	height: 37px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 2px;
+	background: #f11c44;
+	cursor: pointer;
+}
+
+/*------land-side-------------*/
+
+.land-side .free-reg{
+	margin-top: 49px;
+}
+.land-side p{
+	height:38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 13px;
+	color: #6d5580;
+}
+.land-side button{
+	width: 140px;
+	height:30px;
+	border: 1px solid #ff8501;
+	margin-left: 82px;
+	border-radius: 2px;
+	background: #fff;
+	color: #ff6000;
+	cursor: pointer;
+}
+
+

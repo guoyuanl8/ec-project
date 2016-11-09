@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>regist</title>
+	<link rel="stylesheet" href="../css/common/style-reset.css">
+	<link rel="stylesheet" href="../css/common/common.css">
+	<link rel="stylesheet" href="../css/regist.css">
+	<link rel="stylesheet" href="../css/common/side-bar.css">
+</head>
+<body>
+	<!-- side-bar -->
+	<div id="side-bar-out"></div>
+	<div id="side-bar"></div>
+	
+	<!-- top-nav -->
+	<div id="top-nav-out">
+		<div id="top-nav" class="wid-mar">
+			
+		</div>
+	</div>
+	<!-- reg-container -->
+	<div class="wid-mar reg-container">
+		<div class="reg-logo">
+			<div class="logo fl">
+				<a href=""></a>
+				<span></span>
+			</div>
+			<div class="is-reg fr">
+				已经注册，
+				<a href="login.html">现在登录 》</a>
+			</div>
+		</div>
+		<div class="reg-select">
+			<a href="##" class="phone active"><i class="phone-i"></i>手机注册</a><a href="##" class="tv">电视用户激活<i class="tv-i"></i></a>
+		</div>
+		<div class="reg-con">
+			<div class="phone-reg">
+				<!-- 手机号码 -->
+				<div class="register-box clear">
+					<span class="lab-name fl">手机验证：</span>
+					<div class="phone-num fl pos">
+						<!-- 表单项 -->
+						<input type="text" id="phone-num" class="inp">
+						<!-- 提示信息 -->
+						<div class="tip1 tip1-phone"></div>
+						<div class="tip2"></div>
+					</div>
+				</div>
+				<!-- 验证码 -->
+				<div class="register-box clear">
+					<span class="lab-name fl">验证码：</span>
+					<div class="verify-code fl pos">
+						<!-- 表单项 -->
+						<input type="text" id="verify-code" class="inp">
+						<label for="" id="code-pic">
+							<a href="##" id="code-pic-num"></a>
+							看不清，
+							<a href="##" id="switch-over">换一张</a>
+						</label>
+						<!-- 提示信息 -->
+						<!-- <div class="tip1 tip1-phone"></div> -->
+						<div class="tip2"></div>
+					</div>
+				</div>
+				<!-- 设置密码 -->
+				<div class="register-box clear">
+					<span class="lab-name fl">设置密码：</span>
+					<div class="set-code fl pos">
+						<!-- 表单项 -->
+						<input type="password" id="set-code" class="inp">
+						<!-- 提示信息 -->
+						<div class="tip1 tip1-set"></div>
+						<div class="tip2"></div>
+					</div>
+				</div>
+				<!-- 确认密码 -->
+				<div class="register-box clear">
+					<span class="lab-name fl">确认密码：</span>
+					<div class="confirm-code fl pos">
+						<!-- 表单项 -->
+						<input type="password" id="confirm-code" class="inp">
+						<!-- 提示信息 -->
+						<div class="tip1 tip1-confirm"></div>
+						<div class="tip2"></div>
+					</div>
+				</div>
+				<!-- 短信验证码 -->
+				<div class="register-box clear no-margin">
+					<span class="lab-name fl">短信验证码：</span>
+					<div class="msg-code fl pos">
+						<!-- 表单项 -->
+						<input type="text" id="msg-code" class="inp">
+
+						<div id="code-btn">获取短信验证码</div>
+						<!-- 提示信息 -->
+						
+						<div class="tip2"></div>
+					</div>
+				</div>
+				<!-- 协议 -->
+				<div class="register-box clear">
+					<span class="lab-name fl"></span>
+					<div class="agreement fl pos clear">
+						<!-- 表单项 -->
+						<input type="checkbox" id="agreement" class="fl">
+						<label for="agreement"  class="fl">我已阅读并阅读</label>
+							<a href="##" class="fl">《优品惠用户服务承诺》</a>
+						<!-- 提示信息 -->
+						<div class="tip2"></div>
+					</div>
+				</div>
+
+				<!-- 提交 -->
+				<button id="commit">提&ensp;交</button>
+				<div class="help">如果有疑问请点击<a href="">帮助中心</a>，或者拨打客服热线：<span>400-707-0707</span></div>
+			</div>
+			<div class="tv-reg"></div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer-out">
+		<div id="footer" class="wid-mar">
+		
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../lib/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="../lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/common/common.js"></script>
+	<script type="text/javascript" src="../js/regist.js"></script>
+</body>
+</html>

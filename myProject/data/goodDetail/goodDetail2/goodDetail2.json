@@ -1,0 +1,16 @@
+{
+	"id":2,
+	"magnify":{
+		"src1":"../img/goodDetail/02-main-product1.jpg",
+		"src2":"../img/goodDetail/02-main-product2.jpg",
+		"src3":"../img/goodDetail/02-main-product3.jpg",
+		"src4":"../img/goodDetail/02-main-product4.jpg"
+		},
+	"brand":"梦洁",
+	"title":"[梦洁] 悦美之城纯棉六件套",
+	"description":"【买手说】1.A版盛开的百合，象征吉祥如意。运用水彩的表现形式，层次分明，色彩饱满。B版灵动小碎花型，根据居家氛围，自由选择双面使用。2.被套四角贴心为您准备了绑带，方便您的被套与被芯完美结合。3.枕套：信封式枕套*2，压边式枕套*2，方便您的日常更换和使用。4.床单采用包边设计，好看实用，细节彰显品质。",
+	"price":299,
+	"tag":"包邮",
+	"tagCon":"订单金额满168元包邮",
+	"sfyh":"有货"
+}

@@ -1,0 +1,31 @@
+{
+	"id":1,
+	"brand":"丁摩",
+	"title":"丁摩豹绒宽松休闲外套2211大红",
+	"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
+	"price":1134,
+	"tag":"包邮",
+	"tagCon":"订单金额满168元包邮",
+	"sfyh":"无货",
+	"color":{
+		"noColor#黄色":{
+			"src1":"../img/goodDetail/yellow1.jpg"
+		},
+		"紫色":{
+			"src1":"../img/goodDetail/purple1.jpg",
+			"src2":"../img/goodDetail/purple2.jpg",
+			"src3":"../img/goodDetail/purple3.jpg",
+			"src4":"../img/goodDetail/purple4.jpg"
+		},
+		"红":{
+			"src1":"../img/goodDetail/red1.jpg"
+		}
+	},
+	"size":{
+		"noSize#size1":"L",
+		"size2":"X",
+		"size3":"M",
+		"size4":"S"
+	}
+
+}
