@@ -126,11 +126,13 @@
 	position: absolute;
 	left: -460px;	/*动态计算*/
 	top: 0;
+
 }
 #carousel .img-box li{
 	float: left;
 }
 #carousel .img-box li a{
+	display: inline-block;
 	float: left;
 }
 

@@ -8,6 +8,7 @@
 	content:"";
 	display: block;
 	clear: both;
+	visibility: hidden;
 }
 .fl{
 	float: left;

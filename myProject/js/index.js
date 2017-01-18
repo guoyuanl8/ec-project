@@ -8,7 +8,7 @@ $(function(){
 			var oScrollNum = $("#carousel .scroll-num");
 			$(data).each(function(i,elem){
 				//创建元素
-				var oLi = $("<li><a href=''><img src="+$(data)[i].src+" alt=''></a></li>");
+				var oLi = $("<li><a href=''><img src="+$(data)[i].src+" alt='' class='ajaxImg'></a></li>");
 				var oSpan = $("<span></span>");
 				//添加元素
 				oImgBox.append(oLi);
@@ -18,12 +18,26 @@ $(function(){
 			var oFirstLi = oImgBox.find("li").first().clone(true);
 			oImgBox.append(oFirstLi);
 			oImgBox.prepend(oLastLi);
-			var len = oImgBox.children('li').length;
-			var iLiWidth = oImgBox.children('li').width();
-			//设置ul的长度
-			oImgBox.css("width",(len)*iLiWidth);
+			var len = oImgBox.children('li').length; 
+			var iLiWidth = 0;
+			console.log(len);
+			$('.ajaxImg').each(function(){
+				$(this).load(function(){
+					//设置ul的长度
+					iLiWidth = oImgBox.children('li').eq(0).width();
+					oImgBox.css("width",(len)*iLiWidth);
+					console.log(iLiWidth*len);
+					new Carousel("carousel");		
+				});
+			})
+			
+		
 
-			new Carousel("carousel");			
+		
+			
+			
+			
+				
 		}
 	});
 	function Carousel(id){
@@ -36,7 +50,7 @@ $(function(){
 	    this.oImgBox = this.oCarousel.find(".img-box");
 	    this.aLi     = this.oImgBox.children('li');
 	    this.len = this.aLi.length;
-	    this.iLiWidth = this.aLi.eq(0).width();
+	    this.iLiWidth = this.aLi.eq(0).width();	  
 	    this.iNum = 0;	//当前小圆点的索引
 	    this.index = 0;	//当前的图片的索引
 	    this.timer = null;	//	定时器
@@ -110,34 +124,39 @@ $(function(){
 	    	});
 	    });
 	}
+	Carousel.prototype.init = function(){
 
+	};
 	Carousel.prototype.autoPlay = function(){
 		var _this = this;
 		clearInterval(this.timer);
 		this.timer = setInterval(function(){
 			_this.index++;
-			if(_this.index ==_this.len){
-				_this.index = _this.len-1;
+			if(_this.index==0){
+				_this.oImgBox.css("left",-460 - _this.iLiWidth*_this.len-2 );
+				_this.index = 5;	
+				_this.iNum = 4;
 			}
-			if(_this.index == _this.len-1){
+			if(_this.index==_this.len-1){
 				_this.oImgBox.css("left",-460 );
-				_this.iNum = 0;
 				_this.index = 1;
-			}else if(_this.index ===0){
-				_this.iNum=_this.len-3;
+				_this.iNum = 0;
+							
 			}else{
 				_this.iNum = _this.index - 1;
 			}
-			
+				console.log(_this.iNum,"  " ,_this.index);
 			_this.tab();
-		},1000);
+		},2000);
 	};
 	Carousel.prototype.tab = function(){
 		var _this = this;
-		this.oImgBox.stop().animate({"left":-this.iLiWidth*this.index-460},"slow");
+		this.oImgBox.stop().animate({"left":-_this.iLiWidth*this.index-460},"slow");
 		this.aSpans.each(function(j){
 			$(this).removeClass('active');
 		});
+		
+		//console.log(_this.iLiWidth*this.index-460);
 		$(this.aSpans).eq(this.iNum).addClass('active');
 	
 	};

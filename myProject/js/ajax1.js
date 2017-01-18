@@ -2,7 +2,7 @@
 	method:'get',//不传默认为get
 	url:
 	isAsync: 	//不传默认为true
-	data:{},
+	data:{},	
 	header:{},
 	success:
 	error:
