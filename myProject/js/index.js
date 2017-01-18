@@ -20,13 +20,13 @@ $(function(){
 			oImgBox.prepend(oLastLi);
 			var len = oImgBox.children('li').length; 
 			var iLiWidth = 0;
-			console.log(len);
+			//console.log(len);
 			$('.ajaxImg').each(function(){
 				$(this).load(function(){
 					//设置ul的长度
 					iLiWidth = oImgBox.children('li').eq(0).width();
 					oImgBox.css("width",(len)*iLiWidth);
-					console.log(iLiWidth*len);
+					//console.log(iLiWidth*len);
 					new Carousel("carousel");		
 				});
 			})
