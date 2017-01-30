@@ -143,7 +143,7 @@ $(function(){
 			}else{
 				_this.iNum = _this.index - 1;
 			}
-				console.log(_this.iNum,"  " ,_this.index);
+				//console.log(_this.iNum,"  " ,_this.index);
 			_this.tab();
 		},2000);
 	};
@@ -153,8 +153,6 @@ $(function(){
 		this.aSpans.each(function(j){
 			$(this).removeClass('active');
 		});
-		
-		//console.log(_this.iLiWidth*this.index-460);
 		$(this.aSpans).eq(this.iNum).addClass('active');
 	
 	};
@@ -385,6 +383,7 @@ $(function(){
 			type: "get",
 			url: "../data/common/point-goods"+page+".json",
 			success: function(data){
+				console.log(data);
 				var aProLine = $(".point-goods-con .product-line");
 				var num = -1;
 				for(var key in data){
@@ -409,23 +408,28 @@ $(function(){
 					$(this).click(function(){
 						//获取当前商品的id
 						var iID = $(this).attr("id");
-						console.log(iID);
-						for(var o in data){
-							if(data[o].id==iID){
-								//console.log(data[o].detail);
-								var oDetail = data[o].detail;
-								if(!$.cookie("goodDetail")){
-									var goodDetail = {};
-									goodDetail["oDetail"+iID] = oDetail;
-								}else{
-									var goodDetail = JSON.parse($.cookie("goodDetail"));
-									goodDetail["oDetail"+iID] = oDetail;
-								}
-								$.cookie("goodDetail",JSON.stringify(goodDetail),{"expires":200,"path":"/"});
-								console.log(JSON.parse($.cookie("goodDetail")));
-								break;
-							}
-						}
+						var gd_id = {};
+						//console.log(iID)
+						gd_id.iID = iID;
+						//利用localstorage存储起来
+						localStorage.setItem("gd_id_loc",JSON.stringify(gd_id));
+						
+						// for(var o in data){
+						// 	if(data[o].id==iID){
+								
+						// 		var oDetail = data[o].detail;
+						// 		if(!$.cookie("goodDetail")){
+						// 			var goodDetail = {};
+						// 			goodDetail["oDetail"+iID] = oDetail;
+						// 		}else{
+						// 			var goodDetail = JSON.parse($.cookie("goodDetail"));
+						// 			goodDetail["oDetail"+iID] = oDetail;
+						// 		}
+						// 		$.cookie("goodDetail",JSON.stringify(goodDetail),{"expires":200,"path":"/"});
+						// 		console.log(JSON.parse($.cookie("goodDetail")));
+						// 		break;
+						// 	}
+						// }
 					});
 				});
 				page++;

@@ -25,7 +25,10 @@ $(function(){
 	$(".to-mycart").click(function(){
 		var a_isLogin = isLogin();
 		if(a_isLogin =="notLogin"){
-			location.href = "login.html";
+			var res = confirm("请先登录");
+			if(res){
+				location.href = "login.html";
+			}
 		}else{
 			window.open("shopCar.html","_blank");
 		}
@@ -72,29 +75,7 @@ $(function(){
 			$(".cart-info").hide();
 		}
 	);
-	//下拉提示
-/*	var searchInput = $("#search .text input").get(0);
-	var tipList 	= $("#search ul").get(0);
-	//创建script标签
-	searchInput.onkeyup =  function(){
-		var oScript = document.createElement('script');
-		oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+searchInput.value+"&json=1&p=3&cb=test&t";
-		document.body.appendChild(oScript);
-	};
-	function test(data){
-		var tipList = $("#search ul").get(0);
-		console.log(data);
-		console.log(data.s[0]);
-		var s = data.s;
-		tipList.innerHTML = "";
-		for(var i in s){
-			var oLi = document.createElement('li');
-			oLi.innerHTML = s[i];	
-			tipList.appendChild(oLi);
-			
-		}
-		
-	}*/
+	
 	$("#search .text input").keyup(function(){
 		$.ajax({
 			url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+$("#search .text input").val()+"&json=1&p=3",
@@ -201,15 +182,7 @@ $(function(){
 			$(this).css("background","#f70800");
 		}
 	);
-/*	$("#main-nav .nav-cat").hover(
-		function(){	
-			$("#main-nav .cat-body").css("display","block");
 
-		},
-		function(){
-			$("#main-nav .cat-body").css("display","none");
-		}
-	);*/
 	$("#main-nav .nav-cat").mouseenter(function() {
 		$("#main-nav .cat-body").css("display","block");
 	});
@@ -236,7 +209,12 @@ $(function(){
 			$(this).children('.div-sidebar').css("display","none");
 		});
 	});
-	
+	//返回顶部的点击事件
+	$(".a-return").click(function(){
+		//var iScrollTop = $(window).scrollTop(0);
+		$("html,body").animate({'scrollTop':'0px'},800,"swing");
+		
+	});
 
 
 	

@@ -1,0 +1,16 @@
+{
+	"id":3,
+	"magnify":{
+		"src1":"../img/goodDetail/similar1.jpg",
+		"src2":"../img/goodDetail/similar2.jpg",
+		"src3":"../img/goodDetail/similar3.jpg",
+		"src4":"../img/goodDetail/similar4.jpg"
+		},
+	"brand":"哈波斯纳",
+	"title":"哈勃思娜大码修身狐狸毛领皮衣 绛红色",
+	"description":"【买手说】海宁厂家直销 细腻绵羊皮真皮 羊剪绒内胆 可拆卸进口狐狸毛领 狐狸毛袖口",
+	"price":2560,
+	"tag":"包邮",
+	"tagCon":"订单金额满168元包邮",
+	"sfyh":"有货"
+}

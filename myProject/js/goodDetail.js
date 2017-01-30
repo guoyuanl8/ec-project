@@ -4,18 +4,49 @@ $(function(){
 	var fileName = window.location.href;
 	var arr = fileName.split("-");
 	var arr1 = arr[1].split(".");
+	console.log(arr1);
 	var fileNum = arr1[0];
 	console.log(fileNum);
-	//var iId = 0;
+	var iId = 0;
 	var iPrice = 0;//计算浮动窗口中商品金额的时候会用的
-	var oDetails = JSON.parse($.cookie("goodDetail"));
-	console.log(oDetails["oDetail"+fileNum]);
-	var data = oDetails["oDetail"+fileNum];
+	
+	var data = null;
+	
+	$.ajax({
+		type:"get",
+		url:"../data/goodDetail/goodDetail"+fileNum+".json",
+		async:false
+	}).done(function(data){
+		//清除localStorage
+		//localStorage.removeItem();
+		data = data;
+		console.log(data.price);
+	
 			/*---获取该商品的ID，以便在加入购物车的时候检查是否已经加入购物车*/
+			console.log(data)
 			iId = data.id;
 			iPrice = data.price;
 			var oColorReg = /^noColor/i;	
 			var oSizeReg = /^noSize/i;
+			/*----放大镜-----*/
+			if(data.magnify){
+			 	//加载内容进去之前先清空
+			 	$(".big-img-box img").detach();
+			 	$(".middle-img-box img").detach();
+			 	$(".small-img-box ul li").detach();
+			 	//添加节点和内容
+				var oGoodImg = data.magnify;
+				var oBigImg = $('<img src="'+oGoodImg.src1+'" alt="">');
+				$(".big-img-box").append(oBigImg);
+				var oMiddleImg = $('<img src="'+oGoodImg.src1+'" alt="">');
+				$(".middle-img-box").append(oMiddleImg);
+				for(var o in oGoodImg){
+					var oLi = $('<li><img src="'+oGoodImg[o]+'" alt=""></li>');
+					$(".small-img-box ul").append(oLi);
+				}
+				//给第一个小图片（li）加一个acitve类名
+				$(".small-img-box ul li:first").addClass('active');
+			}
 
 			// 商标
 			var oBrand = $('<span>'+data.brand+'</span>');
@@ -115,20 +146,24 @@ $(function(){
 			$(".btn-to-cart").click(function(){
 				//判断有没有登录
 				if(!$.cookie("hasLogin")){
-					alert("请登录");
-					location.href="login.html";
-					return false;
+					if(confirm("请登录")){
+						location.href="login.html";
+						return false;
+					};
 				}
 				//判断有没有选择尺寸,如果没有，则要报错
 				var isChosed = false;
-				aSizes.each(function(){
-					if($(this).hasClass('ck')){	
-						isChosed = true;
+				if(data.size){
+					aSizes.each(function(){
+						if($(this).hasClass('ck')){	
+							isChosed = true;
+						}
+					});
+					if(isChosed === false){
+						$(".size").parent().addClass('error').find(".box").css("display","block");
+						return false;
 					}
-				});
-				if(isChosed === false){
-					$(".size").parent().addClass('error').find(".box").css("display","block");
-					return false;
+					
 				}
 				//把商品数据存入cookie当中	
 				//初始化数据库
@@ -150,15 +185,16 @@ $(function(){
 						}
 					}
 					//取出COOKIE添加商品数据
-					
+					var src = data.color?data.color[oIcurColor].src1:data.magnify.src1;
+					var color = data.color?data.color[oIcurColor]:"";
 					var goodNum = parseInt($("#good-num-input").val() );
 					oGoodInfo["good"+iId] = {
-						"id":1,
-						"src":data.color[oIcurColor].src1,
+						"id":iId,
+						"src":src,
 						"title":data.title,
 						"description":data.description,
 						"price":data.price,
-						"color":oIcurColor,
+						"color":color,
 						"size":oIcurSize,
 						"privilege":20,
 						"goodNum":goodNum
@@ -252,7 +288,7 @@ $(function(){
 			 }
 
 	
-	
+	});
 
 	/*---------end----AJAX-----end-----*/
 	/*---放大镜功能----*/

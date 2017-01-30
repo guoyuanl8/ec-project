@@ -78,9 +78,9 @@ $(function(){
 			console.log($.cookie("hasLogin"));
 			if($("#checkbox")[0].checked){
 				$.cookie("pwd",JSON.stringify(name),{expires:7,path:"/"});		
-				window.open("index.html","_blank");
+				window.open("index.html","_self");
 			}else{
-				window.open("index.html","_blank");
+				window.open("index.html","_self");
 			}
 		}
 	});

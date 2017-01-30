@@ -9,38 +9,8 @@
 		"proPrice":1134,
 		"priceDown":"直降",
 		"freePostage":"包邮",
-		"peoBuy":123,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":123
+		
 	},
 	"product2":{
 		"id":2,
@@ -51,106 +21,32 @@
 		"info":"【买手说】1.A版盛开的百合，象征吉祥如意。运用水彩的表现形式，层次分明，色彩饱满。B版灵动小碎花型，根据居家氛围，自由选择双面使用。2.被套四角贴心为您准备了绑带，方便您的被套与被芯完美结合。3.枕套：信封式枕套*2，压边式枕套*2，方便您的日常更换和使用。4.床单采用包边设计，好看实用，细节彰显品质。",
 		"proPrice":299,
 		"freePostage":"包邮",
-		"peoBuy":4678,
-		"detail":{
-				"id":2,
-				"magnify":{
-					"src1":"../img/goodDetail/02-main-product1.jpg",
-					"src2":"../img/goodDetail/02-main-product2.jpg",
-					"src3":"../img/goodDetail/02-main-product3.jpg",
-					"src4":"../img/goodDetail/02-main-product4.jpg"
-					},
-				"brand":"梦洁",
-				"title":"[梦洁] 悦美之城纯棉六件套",
-				"description":"【买手说】1.A版盛开的百合，象征吉祥如意。运用水彩的表现形式，层次分明，色彩饱满。B版灵动小碎花型，根据居家氛围，自由选择双面使用。2.被套四角贴心为您准备了绑带，方便您的被套与被芯完美结合。3.枕套：信封式枕套*2，压边式枕套*2，方便您的日常更换和使用。4.床单采用包边设计，好看实用，细节彰显品质。",
-				"price":299,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"有货"
-			}
+		"peoBuy":4678
+		
 	},
 	"product3":{
 		"id":3,
-		"src":"../img/index/production3.jpg",
+		"src":"../img/goodDetail/similar1.jpg",
 		"href":"goodDetail-3.html",
-		"h3":"未眠芳芳泰国乳胶按摩床垫1.8米",
-		"info":"【买手说】每天忙得天昏地暗,节假日又去约会，累",
-		"proPrice":234,
+		"h3":"哈勃思娜大码修身狐狸毛领皮衣 绛红色",
+		"info":"【买手说】海宁厂家直销 细腻绵羊皮真皮 羊剪绒内胆 可拆卸进口狐狸毛领 狐狸毛袖口",
+		"proPrice":2560,
 		"priceDown":"直降",
 		"freePostage":"包邮",
-		"peoBuy":3423,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":3423
+		
 	},
 	"product4":{
 		"id":4,
-		"src":"../img/index/production4.jpg",
-		"href":"goodDetail1.html",
+		"src":"../img/goodDetail/plant1.jpg",
+		"href":"goodDetail-4.html",
+		"promotionInfo":"每逢5折大幅度发",
 		"h3":"[恒源祥]亲肤纤丝被",
 		"info":"【买手说】恒源祥，创立于1927年，我们致力于",
 		"proPrice":234,
 		"freePostage":"包邮",
-		"peoBuy":35,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":35
+		
 	},
 	"product5":{
 		"id":5,
@@ -161,38 +57,8 @@
 		"proPrice":234,
 		"priceDown":"直降",
 		"freePostage":"包邮",
-		"peoBuy":144,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":144
+		
 	},
 	"product6":{
 		"id":6,
@@ -203,38 +69,7 @@
 		"info":"【买手说】广角开盖设计角开盖设计角开盖设计角开盖设计开盖设计开盖设计",
 		"proPrice":3232,
 		"freePostage":"包邮",
-		"peoBuy":2324345,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":2324345
 	},
 	"product7":{
 		"id":7,
@@ -245,38 +80,7 @@
 		"info":"【买手说】广角开盖设计角开盖设计角开盖设计角开盖设计开盖设计开盖设计",
 		"proPrice":888,
 		"freePostage":"包邮",
-		"peoBuy":2324,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":2324
 	},
 	"product8":{
 		"id":8,
@@ -287,38 +91,8 @@
 		"proPrice":12324,
 		"priceDown":"直降",
 		"freePostage":"包邮",
-		"peoBuy":2323,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":2323
+		
 	},
 	"product9":{
 		"id":9,
@@ -328,37 +102,7 @@
 		"info":"【买手说】特种工程塑料耐磨齿轮：持久更耐用",
 		"proPrice":12,
 		"freePostage":"包邮",
-		"peoBuy":234,
-		"detail":{
-				"id":1,
-				"brand":"丁摩",
-				"title":"丁摩豹绒宽松休闲外套2211大红",
-				"description":"【买手说】貂绒大衣,亲肤，保暖，不扎身，修身显瘦",
-				"price":1134,
-				"tag":"包邮",
-				"tagCon":"订单金额满168元包邮",
-				"sfyh":"无货",
-				"color":{
-					"noColor#黄色":{
-						"src1":"../img/goodDetail/yellow1.jpg"
-					},
-					"紫色":{
-						"src1":"../img/goodDetail/purple1.jpg",
-						"src2":"../img/goodDetail/purple2.jpg",
-						"src3":"../img/goodDetail/purple3.jpg",
-						"src4":"../img/goodDetail/purple4.jpg"
-					},
-					"红":{
-						"src1":"../img/goodDetail/red1.jpg"
-					}
-				},
-				"size":{
-					"noSize#size1":"L",
-					"size2":"X",
-					"size3":"M",
-					"size4":"S"
-				}
-
-			}
+		"peoBuy":234
+		
 	}
 }

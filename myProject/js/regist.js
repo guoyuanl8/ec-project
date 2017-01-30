@@ -223,7 +223,19 @@ $(function(){
 		oRegInfo.userNum = iUserNum;
 		//再次用户信息保存COOKIE
 		$.cookie("regInfo",JSON.stringify(oRegInfo),{expires:200,path:"/"});
-		console.log(oRegInfo);
+		var isRegist = JSON.parse($.cookie("regInfo"));
+		if(isRegist){
+			if(confirm("恭喜您注册成功")){
+				if(history.length>1){
+					console.log(history.length)
+					history.back();
+				}else{
+					console.log(222);
+					window.location.href = "index.html";
+				}
+			};
+		}
+		
 	});
 	
 

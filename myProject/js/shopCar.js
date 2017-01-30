@@ -124,6 +124,7 @@ $(function(){
 		$(".cart-form .del").each(function(i){
 			$(this).click(function(){
 				var iId = $(this).parents(".cart-form").attr("id");
+				console.log(iId)
 				//删除页面中的节点
 				$(this).parents(".cart-form").detach();
 				getToTal(iPrivilege);
