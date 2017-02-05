@@ -26,6 +26,26 @@
 		"size2":"X",
 		"size3":"M",
 		"size4":"S"
+	},
+	"details":{
+		"imgs":{
+			"src1":"../img/goodDetail/a1.jpg",
+			"src2":"../img/goodDetail/a2.jpg",
+			"src3":"../img/goodDetail/a3.jpg",
+			"src4":"../img/goodDetail/a4.jpg",
+			"src5":"../img/goodDetail/a5.jpg",
+			"src6":"../img/goodDetail/a6.jpg",
+			"src7":"../img/goodDetail/a8.jpg",
+			"src8":"../img/goodDetail/a9.jpg",
+			"src9":"../img/goodDetail/a10.jpg",
+			"src10":"../img/goodDetail/a11.jpg",
+			"src11":"../img/goodDetail/a12.jpg",
+			
+			"src13":"../img/goodDetail/a14.jpg",
+			"src14":"../img/goodDetail/a15.jpg",
+			"src15":"../img/goodDetail/a17.jpg"
+					
+		}
 	}
 
 }

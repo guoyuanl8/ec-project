@@ -287,6 +287,15 @@ $(function(){
 				$(".small-img-box ul li:first").addClass('active');
 			 }
 
+			 //加载商品图片
+			 var aImgs = data.details.imgs;
+			 console.log(aImgs);
+			 for(let key in aImgs){
+			 	console.log(aImgs[key]);
+			 	var imgNodes = $('<img src="'+aImgs[key]+'" alt="" />');
+			 	$(".good-pic-box").append(imgNodes);
+			 }
+
 	
 	});
 

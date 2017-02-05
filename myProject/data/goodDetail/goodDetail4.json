@@ -1,10 +1,10 @@
 {
 	"id":4,
 	"magnify":{
-		"src1":"../img/goodDetail/plant1.jpg",
-		"src2":"../img/goodDetail/plant2.jpg",
-		"src3":"../img/goodDetail/plant3.jpg",
-		"src4":"../img/goodDetail/plant4.jpg"
+		"src1":"../img/goodDetail/a_5.jpg",
+		"src2":"../img/goodDetail/a_2.jpg",
+		"src3":"../img/goodDetail/a_3.jpg",
+		"src4":"../img/goodDetail/a_4.jpg"
 		},
 	"brand":"韩赛",
 	"title":"韩愢生态植物萃取颗粒泡泡染 粟棕色",
@@ -12,5 +12,26 @@
 	"price":299,
 	"tag":"包邮",
 	"tagCon":"订单金额满168元包邮",
-	"sfyh":"有货"
+	"sfyh":"有货",
+	"details":{
+		"imgs":{
+			"src1":"../img/goodDetail/a1.jpg",
+			"src2":"../img/goodDetail/a2.jpg",
+			"src3":"../img/goodDetail/a3.jpg",
+			"src4":"../img/goodDetail/a4.jpg",
+			"src5":"../img/goodDetail/a5.jpg",
+			"src6":"../img/goodDetail/a6.jpg",
+			"src7":"../img/goodDetail/a8.jpg",
+			"src8":"../img/goodDetail/a9.jpg",
+			"src9":"../img/goodDetail/a10.jpg",
+			"src10":"../img/goodDetail/a11.jpg",
+			"src11":"../img/goodDetail/a12.jpg",
+			
+			"src13":"../img/goodDetail/a14.jpg",
+			"src14":"../img/goodDetail/a15.jpg",
+			"src15":"../img/goodDetail/a17.jpg"
+					
+		}
+	}
+
 }
